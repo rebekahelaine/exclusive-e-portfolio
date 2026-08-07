@@ -60,60 +60,68 @@
     <a href="#projects" class="scroll">
       <div class="scroll__icon click"></div>
     </a>
-  </section>
-  <div class="modal">
-    <div class="modal__half modal__about">
-      <h3 class="modal__title modal__title--about">A little about me:</h3>
-      <h4 class="modal__subtitle modal__subtitle--about">
+    <div class="modal">
+      <div class="modal__half modal__about">
+        <h3 class="modal__title modal__title--about">A little about me:</h3>
+        <h4 class="modal__subtitle modal__subtitle--about">
         Frontend Software Engineer
-      </h4>
-      <p class="modal__para">
-        I'm a 34 year-old <b class="pink">frontend software engineer</b> with a strong passion for developing websites with great <b class="pink">user experiences.</b>
-        <br>
-        I recently left a career in education to pursue a profession that provided me with a <b class="pink">creative outlet</b> and <b class="pink">sense of purpose,</b> helping others to carve out their own <b class="pink">personal spaces</b> on the internet to reach the rest of the world.  
-      </p>
-      <div class="modal__languages">
-        <figure class="modal__lang">
-          <img class="modal__lang--img" src="./assets/html circle.png" alt="">
-          <span class="language__name">HTML</span>
-        </figure>
-        <figure class="modal__lang">
-          <img class="modal__lang--img" src="./assets/css logo.png" alt="">
-          <span class="language__name">CSS</span>
-        </figure>
-        <figure class="modal__lang">
-          <img class="modal__lang--img" src="./assets/js-javascript-round-logo-icon-png-7017516947717339mnyf7eumy.png" alt="">
-          <span class="language__name">JavaScript</span>
-        </figure>
-        <figure class="modal__lang">
-          <img class="modal__lang--img" src="./assets/react circle.png" alt="">
-          <span class="language__name">React</span>
-        </figure>
+        </h4>
+        <p class="modal__para">
+          I'm a 34 year-old <b class="pink">frontend software engineer</b> with a strong passion for developing websites with great <b class="pink">user experiences.</b>
+          <br>
+          I recently left a career in education to pursue a profession that provided me with a <b class="pink">creative outlet</b> and <b class="pink">sense of purpose,</b> helping others to carve out their own <b class="pink">personal spaces</b> on the internet to reach the rest of the world.  
+        </p>
+        <div class="modal__languages">
+          <figure class="modal__lang">
+            <img class="modal__lang--img" src="./assets/html circle.png" alt="">
+            <span class="language__name">HTML</span>
+          </figure>
+          <figure class="modal__lang">
+            <img class="modal__lang--img" src="./assets/css logo.png" alt="">
+            <span class="language__name">CSS</span>
+          </figure>
+          <figure class="modal__lang">
+            <img class="modal__lang--img" src="./assets/js-javascript-round-logo-icon-png-7017516947717339mnyf7eumy.png" alt="">
+            <span class="language__name">JavaScript</span>
+          </figure>
+          <figure class="modal__lang">
+            <img class="modal__lang--img" src="./assets/react circle.png" alt="">
+            <span class="language__name">React</span>
+          </figure>
+        </div>
       </div>
+      <div class="modal__half modal__contact">
+        <h3 class="modal__title modal__title--contact">
+        Let's chat!
+        </h3>
+        <h4 class="modal__subtitle modal__subtitle--contact">
+          I'm currently open to new opportunities. 
+        </h4>
+        <form id="contact__form">
+          <div class="form__item">
+            <label class="form__item--label">Name</label>
+            <input class="input" name="user_name" type="text" required></input>
+          </div>
+          <div class="form__item">
+            <label class="form__item--label">Email</label>
+            <input class="input" name="user_email" type="email" required></input>
+          </div>
+          <div class="form__item">
+            <label class="form__item--label">Message</label>
+            <textarea class="input" name="user_message" type="text" required></textarea>
+          </div>
+          <button id="contact__submit" class="form__submit">Send it my way!</button>
+        </form>
+        <div class="modal__overlay modal__overlay--loading">
+          <i class="fa-solid fa-spinner"></i>
+        </div>
+        <div class="modal__overlay modal__overlay--success">
+          Thanks for the message! Looking forward to speaking soon.
+        </div>
+      </div>
+      <i class="fa-solid fa-xmark modal__exit click"></i>
     </div>
-    <div class="modal__half modal__contact">
-      <h3 class="modal__title modal__title--contact">
-        Let's have a chat!
-      </h3>
-      <h4 class="modal__subtitle modal__subtitle--contact">
-        I'm currently open to new opportunities. 
-      </h4>
-      <form id="contact__form">
-        <div class="form__item">
-          <label class="form__item--label">Name</label>
-          <input class="input" name="user_name" type="text" required></input>
-        </div>
-        <div class="form__item">
-          <label class="form__item--label">Email</label>
-          <input class="input" name="user_email" type="email" required></input>
-        </div>
-        <div class="form__item">
-          <label class="form__item--label">Message</label>
-          <textarea class="input" name="user_message" type="text" required></textarea>
-        </div>
-      </form>
-    </div>
-  </div>
+  </section>
   <section id="projects">
     <div class="container">
       <div class="row">
