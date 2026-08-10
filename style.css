@@ -379,12 +379,12 @@ MODAL CONTACT
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: -1;
 }
 
 .modal__overlay--loading {
   background-color: #242424;
   font-size: 80px;
-  z-index: -1;
 }
 
 .modal__overlay--success {
@@ -395,8 +395,12 @@ MODAL CONTACT
   padding: 28px;
 }
 
+.modal__overlay--visible {
+  z-index: 1;
+}
+
 .fa-spinner {
-  animation: spinner 750ms linear;
+  animation: spinner 750ms infinite linear;
 }
 
 @keyframes spinner {
